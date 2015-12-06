@@ -4,6 +4,10 @@ Simple jQuery plugin to display strength of user's password. The plugin has been
 written to seamlessly work with [Twitter Bootstrap](http://github.com/twbs/bootstrap) components. The strength of
 the password is calculated using the [zxcvbn](http://github.com/dropbox/zxcvbn) algorithm.
 
+Zxcvbn returns a value indicating the strength of the password the user has entered.
+There are 5 possible levels with the lowest being weakest and highest strongest (it's
+a zero based index, therefore 0 to 4).
+
 A demo of the plugin is available [here](http://www.kreative.co.uk/github/bootstrapPasswordStrengthMeter/).
 
 ## Installation
@@ -24,19 +28,40 @@ ought to be just before closing body tag for optimum performance.
 <script src="bower_components/zxcvbn/dist/zxcvbn.js"></script>
 </body>
 ```
-4. Use the plugin as below. Use the password input element selector as the plugin
+4. Add a progress bar component at the same level in the DOM as your password
+input using Twitter Bootstrap components. For example:
+```html
+<div class="form-group">
+  <label for="passwordField">Password</label>
+  <input type="password" class="form-control" id="passwordField" placeholder="Password">
+  <div class="progress">
+    <div class="progress-bar">
+    </div>
+  </div>
+</div>
+```
+5. Use the plugin as below. Use the password input element selector as the plugin
  selector.
 ```javascript
 $(function() {
-  $('#exampleInputPassword1').bootstrapPasswordStrengthMeter({
+  $('#passwordField').bootstrapPasswordStrengthMeter({
     minPasswordLength: 4
   });
 });
 ```
 - Options are:
 - `minPasswordLength` integer value which matches the minimum password length in your own validation. Default value is 6.
-- `transitionDelay` is a value, in seconds, of the delay between image transition. Default value is 10.
-- `animationSpeed` is the speed at which the image will fade in (milliseconds). Default value is 1000.
+- `level0ClassName` class name of Zxcvbn level 0 (weakest). Used on `progress-bar` div. Default value is `progress-bar-danger`.
+- `level0Description` description of Zxcvbn level 0 (weakest). Default value is `Weak`.
+- `level1ClassName` class name of Zxcvbn level 1. Used on `progress-bar` div. Default value is `progress-bar-danger`.
+- `level1Description` description of Zxcvbn level 1. Default value is `Not great`.
+- `level2ClassName` class name of Zxcvbn level 2. Used on `progress-bar` div. Default value is `progress-bar-warning`.
+- `level2Description` description of Zxcvbn level 2. Default value is `Better`.
+- `level3ClassName` class name of Zxcvbn level 3. Used on `progress-bar` div. Default value is `progress-bar-success`.
+- `level3Description` description of Zxcvbn level 3. Default value is `Strong`.
+- `level4ClassName` class name of Zxcvbn level 4 (strongest). Used on `progress-bar` div. Default value is `progress-bar-success`.
+- `level4Description` description of Zxcvbn level 4 (strongest). Default value is `Very strong`.
+- `parentContainerClass` class selector of parent of both password and progress-bar. Used for navigating the DOM. Default value is `.form-group`.
 
 ### Customize
 
