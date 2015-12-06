@@ -1,0 +1,19 @@
+{
+  "name": "bootstrapPasswordStrengthMeter",
+  "description": "Simple jQuery plugin to display strength of user's password using Twitter Bootsrap components and zxcvbn.",
+  "version": "0.0.0",
+  "authors": [
+    "Matt Richards <matt@kreative.co.uk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~1.11.3",
+    "zxcvbn": "~4.2.0"
+  }
+}

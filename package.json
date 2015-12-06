@@ -1,0 +1,19 @@
+{
+  "name": "BootstrapPasswordStrengthMeter",
+  "version": "1.0.0",
+  "description": "Simple jQuery plugin to display strength of user's password using Twitter Bootsrap components and zxcvbn.",
+  "author": {
+    "name": "Matt Richards",
+    "email": "matt@kreative.co.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattyrichards/jquery-bootstrapPasswordStrengthMeter.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1"
+  }
+}

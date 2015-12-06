@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>BootstrapPasswordStrengthMeter - a jQuery plugin</title>
+      <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <div class="progress">
+                <div class="progress-bar">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/BootstrapPasswordStrengthMeter.js"></script>
+    <script src="../bower_components/zxcvbn/dist/zxcvbn.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('#exampleInputPassword1').bootstrapPasswordStrengthMeter({
+            minPasswordLength: 3
+          });
+        });
+    </script>
+
+  </body>
+</html>
