@@ -51,16 +51,16 @@ $(function() {
 ```
 - Options are:
 - `minPasswordLength` integer value which matches the minimum password length in your own validation. Default value is 6.
-- `level0ClassName` class name of Zxcvbn level 0 (weakest). Used on `progress-bar` div. Default value is `progress-bar-danger`.
-- `level0Description` description of Zxcvbn level 0 (weakest). Default value is `Weak`.
-- `level1ClassName` class name of Zxcvbn level 1. Used on `progress-bar` div. Default value is `progress-bar-danger`.
-- `level1Description` description of Zxcvbn level 1. Default value is `Not great`.
-- `level2ClassName` class name of Zxcvbn level 2. Used on `progress-bar` div. Default value is `progress-bar-warning`.
-- `level2Description` description of Zxcvbn level 2. Default value is `Better`.
-- `level3ClassName` class name of Zxcvbn level 3. Used on `progress-bar` div. Default value is `progress-bar-success`.
-- `level3Description` description of Zxcvbn level 3. Default value is `Strong`.
-- `level4ClassName` class name of Zxcvbn level 4 (strongest). Used on `progress-bar` div. Default value is `progress-bar-success`.
-- `level4Description` description of Zxcvbn level 4 (strongest). Default value is `Very strong`.
+- `level0ClassName` class name of zxcvbn level 0 (weakest). Used on `progress-bar` div. Default value is `progress-bar-danger`.
+- `level0Description` description of zxcvbn level 0 (weakest). Default value is `Weak`.
+- `level1ClassName` class name of zxcvbn level 1. Used on `progress-bar` div. Default value is `progress-bar-danger`.
+- `level1Description` description of zxcvbn level 1. Default value is `Not great`.
+- `level2ClassName` class name of zxcvbn level 2. Used on `progress-bar` div. Default value is `progress-bar-warning`.
+- `level2Description` description of zxcvbn level 2. Default value is `Better`.
+- `level3ClassName` class name of zxcvbn level 3. Used on `progress-bar` div. Default value is `progress-bar-success`.
+- `level3Description` description of zxcvbn level 3. Default value is `Strong`.
+- `level4ClassName` class name of zxcvbn level 4 (strongest). Used on `progress-bar` div. Default value is `progress-bar-success`.
+- `level4Description` description of zxcvbn level 4 (strongest). Default value is `Very strong`.
 - `parentContainerClass` class selector of parent of both password and progress-bar. Used for navigating the DOM. Default value is `.form-group`.
 
 ### Customize
