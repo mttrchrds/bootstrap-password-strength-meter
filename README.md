@@ -1,4 +1,4 @@
-# BootstrapPasswordStrengthMeter
+# Bootstrap-password-strength-meter
 
 Simple jQuery plugin to display strength of user's password. The plugin has been
 written to seamlessly work with [Twitter Bootstrap](http://github.com/twbs/bootstrap) components. The strength of
