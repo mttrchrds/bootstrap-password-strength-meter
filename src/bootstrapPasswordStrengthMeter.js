@@ -47,6 +47,8 @@
               .removeClass(this.config.level2ClassName)
               .removeClass(this.config.level3ClassName)
               .removeClass(this.config.level4ClassName);
+            progressBar.data('score', zxcvbnObj.score);
+            progressBar.attr('data-score', zxcvbnObj.score);
             switch (zxcvbnObj.score) {
               case 0:
                 progressBarWidth = 25;

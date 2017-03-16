@@ -8,6 +8,8 @@ Zxcvbn returns a value indicating the strength of the password the user has ente
 There are 5 possible levels with the lowest being weakest and highest strongest (it's
 a zero based index, therefore 0 to 4).
 
+Update: The `.progress-bar` element now has a HTML data attribute called 'score' which contains the Zxcvbn score.
+
 A demo of the plugin is available [here](http://www.kreative.co.uk/github/bootstrapPasswordStrengthMeter/).
 
 ## Installation
