@@ -10,7 +10,7 @@ a zero based index, therefore 0 to 4).
 
 Update: The `.progress-bar` element now has a HTML data attribute called 'score' which contains the Zxcvbn score.
 
-A demo of the plugin is available [here](http://www.kreative.co.uk/github/bootstrapPasswordStrengthMeter/).
+A demo of the plugin is available [here](http://www.mttrchrds.com/github/bootstrapPasswordStrengthMeter/).
 
 ## Installation
 
